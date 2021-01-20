@@ -68,9 +68,8 @@ class TextAnalyzer(TextBase):
         pass
         # df = pd.DataFrame({'Words': [word[0] for word in self.list_of_lines], 
         #            'Count': [word[1] for word in self.list_of_lines]})
-        # ws = [w[0] for w in self.list_of_lines]
-        # nu = [w[1] for w in self.list_of_lines]
-        # # print(self.list_of_lines)
+        ws = [w[0] for w in self.list_of_lines]
+        nu = [w[1] for w in self.list_of_lines]
 
         plt.barh(range(len(ws)),nu)
         plt.yticks(range(len(ws)),ws)
